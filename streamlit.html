@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamlit Deployments | Princewill Edemu</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Simple Navigation to get back home -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">PE<span class="accent">.</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="btn-nav"><i class="fas fa-arrow-left"></i> Back to Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="hero-section" style="min-height: auto; padding-top: 10rem; padding-bottom: 3rem;">
+        <div class="hero-content" style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <span class="hero-sub"><i class="fas fa-rocket"></i> Live Web Deployments</span>
+            <h1 class="hero-title" style="font-size: clamp(2rem, 5vw, 3.5rem);">My Streamlit Applications</h1>
+            <p class="hero-desc" style="margin: 1.5rem auto 0 auto;">
+                Interactive data products and predictive modeling dashboards built with Python and deployed live. Click any card to launch the application.
+            </p>
+        </div>
+    </section>
+
+    <!-- Grid of Streamlit Apps -->
+    <section class="container" style="padding-bottom: 8rem;">
+        <div class="projects-grid">
+
+            <!-- ==========================================
+                 APP CARD 1 (Your Current Live App)
+                 ========================================== -->
+            <article class="project-card">
+                <div class="project-header">
+                    <div class="project-icons">
+                        <i class="fas fa-laptop-code" style="font-size: 2rem; color: var(--accent);"></i>
+                        <div class="external-links">
+                            <!-- Link to your GitHub code for this specific app -->
+                            <a href="https://github.com/yourusername/your-app-repo" target="_blank" title="View Code"><i class="fab fa-github"></i></a>
+                            <!-- Direct link to your live Streamlit deployment -->
+                            <a href="https://your-app-link.streamlit.app" target="_blank" title="Launch App"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title" style="margin-top: 1rem;">Predictive Maintenance Dashboard</h3>
+                    <p class="project-description">
+                        An interactive machine learning app that processes real-time sensor streams to predict industrial equipment failures before they happen.
+                    </p>
+                </div>
+                
+                <!-- Action Button to Open Directly -->
+                <a href="https://your-app-link.streamlit.app" target="_blank" class="btn btn-primary" style="display: block; margin-top: 1.5rem; width: 100%; text-align: center; text-decoration: none;">
+                    Launch Application <i class="fas fa-external-link-alt" style="font-size: 0.8rem; margin-left: 5px;"></i>
+                </a>
+                
+                <ul class="project-tags" style="margin-top: 1.5rem;">
+                    <li>Python</li>
+                    <li>Streamlit</li>
+                    <li>Scikit-Learn</li>
+                    <li>ML Deployment</li>
+                </ul>
+            </article>
+
+
+            <!-- ==========================================
+                 HOW TO ADD A NEW APP IN THE FUTURE:
+                 
+                 To add your next app, simply copy everything 
+                 between the START and END markers below, 
+                 paste it directly underneath, and change 
+                 the links, titles, and tags!
+                 ========================================== -->
+            
+            <!-- === COPY START === -->
+            <!-- 
+            <article class="project-card">
+                <div class="project-header">
+                    <div class="project-icons">
+                        <i class="fas fa-chart-pie" style="font-size: 2rem; color: var(--accent);"></i>
+                        <div class="external-links">
+                            <a href="INSERT_GITHUB_LINK_HERE" target="_blank" title="View Code"><i class="fab fa-github"></i></a>
+                            <a href="INSERT_STREAMLIT_LINK_HERE" target="_blank" title="Launch App"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title" style="margin-top: 1rem;">NEW_APP_TITLE</h3>
+                    <p class="project-description">
+                        Provide a brief description of what this app does, the problem it solves, and the insights it generates.
+                    </p>
+                </div>
+                
+                <a href="INSERT_STREAMLIT_LINK_HERE" target="_blank" class="btn btn-primary" style="display: block; margin-top: 1.5rem; width: 100%; text-align: center; text-decoration: none;">
+                    Launch Application <i class="fas fa-external-link-alt" style="font-size: 0.8rem; margin-left: 5px;"></i>
+                </a>
+
+                <ul class="project-tags" style="margin-top: 1.5rem;">
+                    <li>Streamlit</li>
+                    <li>Pandas</li>
+                    <li>Data Analysis</li>
+                </ul>
+            </article>
+            -->
+            <!-- === COPY END === -->
+
+        </div>
+    </section>
+
+    <!-- Simple Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Princewill Edemu. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
