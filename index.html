@@ -3,178 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Princewill Edemu | Portfolio</title>
-    <style>
-        :root {
-            --bg: #0f172a;
-            --card-bg: #1e293b;
-            --accent: #38bdf8;
-            --text-main: #f8fafc;
-            --text-muted: #94a3b8;
-            --border: #334155;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-            background-color: var(--bg);
-            color: var(--text-main);
-            line-height: 1.6;
-            padding: 2rem 1rem;
-        }
-
-        .container {
-            max-width: 850px;
-            margin: 0 auto;
-        }
-
-        header {
-            text-align: center;
-            padding: 3rem 0;
-            border-bottom: 1px solid var(--border);
-            margin-bottom: 3rem;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            color: #ffffff;
-            margin-bottom: 0.5rem;
-        }
-
-        .title-sub {
-            color: var(--accent);
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-
-        .bio {
-            color: var(--text-muted);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        section {
-            margin-bottom: 3rem;
-        }
-
-        h2 {
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            border-left: 4px solid var(--accent);
-            padding-left: 10px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1.5rem;
-        }
-
-        @media (min-width: 768px) {
-            .grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        .card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1.5rem;
-            transition: transform 0.2s, border-color 0.2s;
-        }
-
-        .card:hover {
-            transform: translateY(-4px);
-            border-color: var(--accent);
-        }
-
-        .card h3 {
-            margin-bottom: 0.5rem;
-            color: #ffffff;
-        }
-
-        .card p {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-            margin-bottom: 1rem;
-        }
-
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
-
-        .tag {
-            background-color: var(--bg);
-            border: 1px solid var(--border);
-            color: var(--accent);
-            padding: 0.2rem 0.6rem;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            font-family: monospace;
-        }
-
-        .contact-btn {
-            display: inline-block;
-            background-color: var(--accent);
-            color: var(--bg);
-            padding: 0.8rem 1.5rem;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 1rem;
-            transition: opacity 0.2s;
-        }
-
-        .contact-btn:hover {
-            opacity: 0.9;
-        }
-    </style>
+    <title>Princewill Edemu | Data Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Princewill Edemu</h1>
-            <p class="title-sub">Mechanical Engineer & Data Science Specialist</p>
-            <p class="bio">Bridging industrial engineering with intelligent systems. Experienced in safety, reliability analysis, and implementing machine learning algorithms to solve real-world problems.</p>
-        </header>
 
-        <section id="projects">
-            <h2>Featured Projects</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>Automated Fish Feed Pelletizer</h3>
-                    <p>Designed and fabricated an automated mechanical pelletizer. Handled engineering drawings, stress analysis, and structural integration.</p>
-                    <div class="tags">
-                        <span class="tag">CAD/Mechanical Design</span>
-                        <span class="tag">Fabrication</span>
-                    </div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">PE<span class="accent">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="btn-nav">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <span class="hero-sub">Hi, my name is</span>
+            <h1 class="hero-title">Princewill Edemu</h1>
+            <h2 class="hero-subtitle">Engineering the future with Data & ML.</h2>
+            <p class="hero-desc">
+                I am a Mechanical Graduate bridging the gap between physical engineering systems and intelligent software. I specialize in building predictive models, optimizing databases, and deploying interactive data apps.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        With a solid foundation in Mechanical Engineering (Second Class Upper, FUPRE), I've transitioned my analytical problem-solving mindset directly into **Data Science and Machine Learning**. 
+                    </p>
+                    <p>
+                        I love taking messy, real-world data and turning it into actionable, production-ready solutions. Whether it's analyzing physical systems, building robust predictive maintenance architectures, or tracking financial performance metrics, my focus is always on reliability, efficiency, and clarity.
+                    </p>
                 </div>
-                <div class="card">
-                    <h3>Predictive Maintenance Model</h3>
-                    <p>Developing predictive algorithms to evaluate machinery wear and tear, optimizing downtime using machine learning models.</p>
-                    <div class="tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">PostgreSQL</span>
-                        <span class="tag">Scikit-Learn</span>
+                <div class="about-highlight">
+                    <div class="highlight-card">
+                        <h3>Education & Certifications</h3>
+                        <ul>
+                            <li><strong>B.Eng. Mechanical Engineering</strong> - FUPRE</li>
+                            <li><strong>International Plate Welder Diploma</strong> - IIW</li>
+                            <li><strong>Data Science & AI/ML Specialist</strong> - Tech Transition Program</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contact" style="text-align: center;">
-            <h2>Get In Touch</h2>
-            <p style="color: var(--text-muted); margin-bottom: 1rem;">Let's collaborate on engineering or data science initiatives.</p>
-            <a href="mailto:your.email@example.com" class="contact-btn">Send Email</a>
-        </section>
-    </div>
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Technical Stack</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fab fa-python"></i>
+                        <h3>Data Science & ML</h3>
+                    </div>
+                    <ul>
+                        <li>Python (Pandas, NumPy, Scikit-Learn)</li>
+                        <li>Model Training & Evaluation</li>
+                        <li>Predictive Analytics</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Data Engineering</h3>
+                    </div>
+                    <ul>
+                        <li>SQL (PostgreSQL)</li>
+                        <li>Database Optimization</li>
+                        <li>ETL Data Pipelines</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Deployment & BI</h3>
+                    </div>
+                    <ul>
+                        <li>Streamlit Web Applications</li>
+                        <li>Git & CI/CD Pipelines</li>
+                        <li>Interactive Dashboards</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icons">
+                            <i class="fas fa-folder"></i>
+                            <div class="external-links">
+                                <a href="https://github.com/yourusername" target="_blank" title="GitHub Repo"><i class="fab fa-github"></i></a>
+                                <a href="https://your-app.streamlit.app" target="_blank" title="Live Streamlit App"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Predictive Maintenance Streamlit App</h3>
+                        <p class="project-description">
+                            An interactive ML web application that predicts equipment failures based on real-time sensor metrics (temperature, rotational speed, torque).
+                        </p>
+                    </div>
+                    <ul class="project-tags">
+                        <li>Streamlit</li>
+                        <li>Python</li>
+                        <li>Scikit-Learn</li>
+                        <li>Pandas</li>
+                    </ul>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icons">
+                            <i class="fas fa-folder"></i>
+                            <div class="external-links">
+                                <a href="https://github.com/yourusername" target="_blank" title="GitHub Repo"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Fish Feed Pelletizer Simulation</h3>
+                        <p class="project-description">
+                            Engineered structural analysis and optimization datasets for an automated pelletizer, ensuring optimal mechanical stress limitations and feed uniformity.
+                        </p>
+                    </div>
+                    <ul class="project-tags">
+                        <li>CAD Optimization</li>
+                        <li>Numerical Analysis</li>
+                        <li>Python</li>
+                    </ul>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icons">
+                            <i class="fas fa-folder"></i>
+                            <div class="external-links">
+                                <a href="https://github.com/yourusername" target="_blank" title="GitHub Repo"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Industrial Inventory SQL Dashboard</h3>
+                        <p class="project-description">
+                            Designed and queried high-performance relational database layouts to model supply chains and forecast critical component depletion.
+                        </p>
+                    </div>
+                    <ul class="project-tags">
+                        <li>PostgreSQL</li>
+                        <li>Query Optimization</li>
+                        <li>ETL</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="contact-lead">I am always open to discussing data science contracts, full-time engineering/analytics roles, or collaborative open-source projects.</p>
+            
+            <form action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST" class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="_replyto" id="email" required placeholder="your.email@example.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="6" required placeholder="How can I help you? Tell me about your project..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Princewill Edemu. Handcrafted with clean HTML & CSS.</p>
+    </footer>
+
 </body>
 </html>
